@@ -5,12 +5,21 @@ html(lang='en-US')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     title Chismosas
+    link(rel='stylesheet', href='../bower_components/bootstrap/dist/css/bootstrap.min.css')
     link(rel='stylesheet', href='css/main.css')
   body
       <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
+    .nav.navbar.navbar-default.navbar-fixed-bottom.navbar-inverse
       .container
-        h1 Chismosas
+        a.navbar-brand(href='#') Chismosas
+        form.navbar-form.form-inline.pull-right
+          .form-group
+            input.form-control(type='text' placeholder='bob' id='name')
+            input.form-control(type='textarea' placeholder='type your message here' id='message' rows='1')
+            button.btn.btn-success(id='submitMessage') Tell 'em
+
+    #target.container
 
       // build:js js/vendor.min.js
       // bower:js

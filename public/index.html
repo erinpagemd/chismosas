@@ -5,12 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chismosas</title>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
-  <body><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <div class="container">
-      <h1>Chismosas</h1>
+  <body><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></body>
+  <div class="nav navbar navbar-default navbar-fixed-bottom navbar-inverse">
+    <div class="container"><a href="#" class="navbar-brand">Chismosas</a>
+      <form class="navbar-form form-inline pull-right">
+        <div class="form-group">
+          <input type="text" placeholder="bob" id="name" class="form-control">
+          <input type="textarea" placeholder="type your message here" id="message" rows="1" class="form-control">
+          <button id="submitMessage" class="btn btn-success">Tell 'em</button>
+        </div>
+      </form>
     </div>
+  </div>
+  <div id="target" class="container">
     <!-- build:js js/vendor.min.js-->
     <!-- bower:js-->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
@@ -22,5 +32,5 @@
     <!-- build:js js/main.min.js-->
     <script src="/scripts/index.js"></script>
     <!-- endbuild-->
-  </body>
+  </div>
 </html>

@@ -1,5 +1,42 @@
-@import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+//@import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
 
-h1 {
-  color: blue;
+.name {
+  style: inline-block;
+}
+
+.convo {
+  padding: 1%;
+  margin: 1%;
+  font-weight: bold;
+}
+
+.message {
+  background-color: white;
+  font-size: 2rem;
+  border-radius: 47px;
+}
+
+.givenName {
+  text-align: right;
+  color: white;
+}
+
+
+.namedMessageDiv {
+  padding: 1%;
+  margin: 1%;
+}
+
+.navbar-brand {
+  font-size: 4rem;
+}
+
+
+///////////////////////////////////////////////////
+/////////////// HTML ELEMENTS /////////////////////
+//////////////////////////////////////////////////
+
+body {
+  background: linear-gradient(to bottom, #669, #000 50%);
+  background-attachment: fixed;
 }
